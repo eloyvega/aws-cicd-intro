@@ -8,3 +8,4 @@ Crea un [Personal access token](https://github.com/settings/tokens) con los *sco
 ```bash
 export GITHUB_TOKEN=$(aws ssm get-parameter --name "GitHubToken" --with-decryption --query "Parameter.Value"  --output text)
 ```
+
